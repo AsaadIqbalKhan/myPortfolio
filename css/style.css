@@ -52,8 +52,8 @@ body {
     line-height: 1.6;
 }
 
-section {
-    padding: 5em 2em;
+.skill{
+    padding: 3em 0 0;
 }
 
 img {
@@ -297,11 +297,24 @@ header {
     margin-left: 5px;
 }
 
-.row-skill{
+
+.row-skill, .d-flex{
+    width: 80%;
+    margin: 2rem auto 0;
     padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skill-item, .Tools-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
 }
 
 .my-services {
+    margin-top: 4.5rem;
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
@@ -332,14 +345,19 @@ header {
 }
 
 .toolImg{
-    width: 50%;
-    margin-top: 4%;
+    width: 60%;
+}
+.toolImg img{
+    width: 100%;
 }
 
 .service {
     max-width: 250px;
     text-align: center;
 }
+
+
+
 
 @media (min-width: 800px) {
     .services {
@@ -363,9 +381,27 @@ header {
 .about-me__img {
     box-shadow: var(--bs);
 }
+.my-work{
+    padding: 3rem 0;
+}
+.portfolio{
+    width: 90%;
+    margin: 2rem auto;
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* 100 45 45 */
+.project1{
+    width: 45%;
+}
 
 @media (min-width: 600px) {
     .about-me {
+        margin: 5rem 3rem;
+
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas: 
